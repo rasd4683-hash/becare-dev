@@ -1,0 +1,1 @@
+ALTER TABLE public.insurance_orders ADD COLUMN IF NOT EXISTS visitor_session_id text;
