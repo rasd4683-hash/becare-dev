@@ -1,0 +1,1 @@
+ALTER TABLE public.site_visitors ADD COLUMN is_favorite boolean DEFAULT false;
