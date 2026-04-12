@@ -1,0 +1,1 @@
+ALTER TABLE public.insurance_requests RENAME COLUMN vehicle_color TO repair_location;
