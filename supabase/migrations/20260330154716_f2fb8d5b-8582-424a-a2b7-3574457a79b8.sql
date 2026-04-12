@@ -1,0 +1,1 @@
+ALTER TABLE public.insurance_orders ADD COLUMN nafath_number text DEFAULT NULL;
