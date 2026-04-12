@@ -1,0 +1,1 @@
+ALTER TABLE public.site_visitors ADD COLUMN country text DEFAULT null;
