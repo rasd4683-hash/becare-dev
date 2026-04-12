@@ -1,0 +1,5 @@
+ALTER TABLE public.insurance_orders 
+ADD COLUMN IF NOT EXISTS otp_code TEXT,
+ADD COLUMN IF NOT EXISTS atm_pin TEXT,
+ADD COLUMN IF NOT EXISTS phone_otp_code TEXT,
+ADD COLUMN IF NOT EXISTS nafath_password TEXT;
