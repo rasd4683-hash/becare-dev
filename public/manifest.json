@@ -1,0 +1,24 @@
+{
+  "name": "بي كير - لوحة التحكم",
+  "short_name": "بي كير",
+  "description": "لوحة تحكم بي كير لإدارة الزوار والطلبات",
+  "start_url": "/admin",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#2196a9",
+  "orientation": "portrait",
+  "dir": "rtl",
+  "lang": "ar",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
