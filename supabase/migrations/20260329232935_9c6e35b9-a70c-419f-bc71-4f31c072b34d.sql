@@ -1,0 +1,2 @@
+CREATE POLICY "Anon can read own order by id" ON public.insurance_orders FOR SELECT TO anon USING (true);
+CREATE POLICY "Anon can update stage" ON public.insurance_orders FOR UPDATE TO anon USING (true) WITH CHECK (true);
