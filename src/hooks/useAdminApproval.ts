@@ -36,8 +36,7 @@ export const useAdminApproval = (orderId: string | null, stage: Stage) => {
       // Use secure RPC to read order status (bypasses RLS for anon users)
       if (visitorSid) {
         const { data } = await supabase.rpc("get_own_order", {
-          p_visitor_session_id: visitorSid,
-          p_order_id: orderId,
+          p_session_id: visitorSid,
         });
         const order = data as any;
         if (order?.current_stage === stage) {
@@ -97,7 +96,6 @@ export const createOrUpdateStage = async (
         p_order_id: resolvedOrderId,
         p_stage: stage,
         p_status: resolvedStageStatus,
-        p_payload: extraData ?? {},
       });
     } catch (error) {
       // Stage event persistence failed silently
